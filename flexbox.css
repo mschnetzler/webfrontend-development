@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    /* Experimentieren Sie mit verschiedenen Werten für die Hauptachse */
+    justify-content: flex-start; /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+    flex-direction: row;
+    align-items: stretch; /* stretch, flex-start, flex-end, center, baseline */
+    /* Experimentieren Sie mit der Querachse, wenn Sie mehrere Zeilen haben */
+    align-content: stretch; /* stretch, flex-start, flex-end, center, space-between, space-around */
+    flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+    height: 20em; /* Stellen Sie sicher, dass der Container den gesamten Viewport einnimmt */
+    padding: 20px;
+    gap: 10px; /* Abstand zwischen den Flex Items */
+}
+
+.flex-item {
+    flex: 1; /* Experimentieren Sie mit flex-grow und flex-shrink Werten, z.B. flex: 1 1 auto; */
+    /* flex-basis kann verwendet werden, um die Anfangsgröße eines Flex Items zu definieren */
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    color: darkblue;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px; /* Optionaler Außenabstand */
+    padding: 20px; /* Innenabstand */
+}
