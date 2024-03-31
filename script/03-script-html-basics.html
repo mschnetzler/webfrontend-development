@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Grundlagen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HTML Grundlagen</h1>
+
+    <h2>Einleitung</h2>
+    <p>HTML ist die Grundlage für das Erstellen von Webseiten und definiert deren Struktur und Inhalt. Der Standard für HTML wird vom World Wide Web Consortium (W3C) festgelegt und kontinuierlich weiterentwickelt, um unterschiedlichen Browsern und Benutzerbedürfnissen gerecht zu werden. Weitere Informationen zur Definition von HTML finden Sie unter <a href="https://html.spec.whatwg.org/dev/semantics.html#the-root-element" target="_blank">W3C Semantics</a>.</p>
+
+    <h2>XML</h2>
+    <p>XML ist eine flexible Datenformatierungssprache, die für die Darstellung verschiedener Datenstrukturen verwendet wird. Im Kontext von Webseiten ermöglicht es die Beschreibung und den Transport von Informationen in einer Weise, die sowohl für Menschen als auch für Maschinen lesbar ist. Hier sind die Schlüsselkomponenten des XML-Grundgerüsts:</p>
+    <ul>
+        <li><span class="element">Elemente:</span> Elemente sind die Bausteine von XML-Dokumenten. Ein Element wird durch ein <span class="tag">Start-Tag</span> wie <code>&lt;name&gt;</code> eingeleitet, kann Inhalte enthalten und wird durch ein <span class="tag">End-Tag</span> wie <code>&lt;/name&gt;</code> abgeschlossen. Wenn ein Element keine Inhalte hat, kann es auch in verkürzter Form geschrieben werden: <code>&lt;name/&gt;</code>.</li>
+        <li><span class="tag">Tags:</span> Tags markieren den Anfang und das Ende eines Elements. Sie bestehen aus spitzen Klammern mit einem Namen innen. Der Name innerhalb der Start- und End-Tags muss exakt übereinstimmen.</li>
+        <li><span class="attribute">Attribute:</span> Attribute liefern zusätzliche Informationen über Elemente. Sie befinden sich immer im Start-Tag eines Elements und haben die Form <code>attributename="wert"</code>. Zum Beispiel: <code>&lt;note <span class="attribute">importance="high"</span>&gt;</code>. Hier ist "importance" der Attributname und "high" der Wert des Attributs.</li>
+        <li><span class="element">Wurzelelement:</span> Jedes XML-Dokument enthält ein einzelnes Wurzelelement, das alle anderen Elemente umfasst. Dieses Wurzelelement ist das oberste Element in der Hierarchie.</li>
+    </ul>
+
+    <h2>Das Grundgerüst</h2>
+    <p>Eine HTML-Seite besteht aus mehreren grundlegenden Elementen, die ihre Struktur definieren:</p>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code> kennzeichnet die Dokumenttyp-Deklaration und ist notwendig, um dem Browser mitzuteilen, dass es sich um ein HTML5-Dokument handelt.</li>
+        <li>Das <code>&lt;html&gt;</code> Tag ist das Wurzelelement und umschließt den gesamten Inhalt der Webseite.</li>
+        <li>Innerhalb des <code>&lt;html&gt;</code> Tags finden wir das <code>&lt;head&gt;</code> Element, das für Metadaten wie den Titel der Seite, Verweise auf Stylesheets und andere Informationen genutzt wird, die nicht direkt auf der Seite angezeigt werden.</li>
+        <li>Das <code>&lt;body&gt;</code> Element beinhaltet den sichtbaren Inhalt der Webseite, wie Texte, Bilder, Links und mehr.</li>
+    </ul>
+    
+    <h2>Beispiel:</h2>
+    <pre>
+&lt;<span class="element">note</span> <span class="attribute-name">importance</span>="<span class="attribute-value">high</span>" <span class="attribute-name">date</span>="<span class="attribute-value">2024-03-31</span>"&gt;
+    &lt;<span class="tag">to</span>&gt;Benutzer&lt;/<span class="tag">to</span>&gt;
+    &lt;<span class="tag">from</span>&gt;Automatisierter Schreiber&lt;/<span class="tag">from</span>&gt;
+    &lt;<span class="tag">heading</span>&gt;Erinnerung&lt;/<span class="tag">heading</span>&gt;
+    &lt;<span class="tag">body</span>&gt;Bitte vergessen Sie nicht, die Blogpost-Anleitung zu lesen.&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="element">note</span>&gt;
+    </pre>
+
+
+    <h2>Grundelemente</h2>
+    <p>In diesem Abschnitt werden die Grundelemente einer HTML-Seite vorgestellt und kurz beschrieben:</p>
+
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Beschreibung</th>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;div&gt;</td>
+            <td>Ein Block-Element, das zum Gruppieren von Inhalten und Strukturierung der HTML-Seite verwendet wird.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;span&gt;</td>
+            <td>Ein Inline-Element zur Formatierung eines kleinen Teils von Text oder zur Gruppierung von Elementen für stilistische Zwecke.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;br /&gt;</td>
+            <td>Ein Selbstschließendes Tag zur Erzeugung eines Zeilenumbruchs.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;p&gt;</td>
+            <td>Definiert einen Absatz und wird für den Haupttext auf einer Webseite verwendet.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;h1&gt; bis &lt;h6&gt;</td>
+            <td>Überschriftentags zur Darstellung von Titeln und Unterüberschriften, wobei &lt;h1&gt; die höchste und &lt;h6&gt; die niedrigste Ebene ist.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+            <td>Listenelemente für ungeordnete (ul) oder geordnete (ol) Listen. Jeder Listeneintrag wird mit &lt;li&gt; markiert.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;a href=""&gt;</td>
+            <td>Definiert einen Hyperlink, der zu einem anderen Dokument oder einer anderen Ressource führt.</td>
+        </tr>
+        <tr>
+            <td class="element-name">&lt;img src="" alt=""&gt;</td>
+            <td>Bindet ein Bild in das Dokument ein, wobei das 'src'-Attribut den Pfad zur Bilddatei und das 'alt'-Attribut einen Alternativtext enthält.</td>
+        </tr>
+    </table>
+
+</body>
+</html>
