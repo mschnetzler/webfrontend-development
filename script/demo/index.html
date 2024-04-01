@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#berufliche-laufbahn">Berufliche Laufbahn</a></li>
+        <li><a href="#ausbildung">Ausbildung</a></li>
+        <li><a href="#fähigkeiten">Fähigkeiten</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="hero-image"></div>
+
+<section id="ueber-mich">
+    <h1>Max Mustermann</h1>
+    <p>Ich bin ein leidenschaftlicher Webentwickler mit über 5 Jahren Erfahrung in der Entwicklung von nutzerfreundlichen Webanwendungen. Meine Expertise umfasst sowohl Frontend- als auch Backend-Technologien...</p>
+</section>
+
+<section id="berufliche-laufbahn">
+    <h2>Berufliche Laufbahn</h2>
+    <section id="timeline">
+        <h2>Mein Werdegang</h2>
+        <div class="timeline-container">
+            <div class="timeline-block timeline-block-left">
+                <h3>2023</h3>
+                <p>Lead Entwickler bei TechInnovators</p>
+            </div>
+            <div class="timeline-block timeline-block-right">
+                <h3>2022</h3>
+                <p>Master of Science in Informatik, Universität Beispielstadt</p>
+            </div>
+            <div class="timeline-block timeline-block-left">
+                <h3>2021</h3>
+                <p>Softwareentwickler bei CreativeSolutions</p>
+            </div>
+            <div class="timeline-block timeline-block-right">
+                <h3>2019</h3>
+                <p>Bachelor of Science in Informatik, Technische Hochschule Musterstadt</p>
+            </div>
+            <div class="timeline-block timeline-block-left">
+                <h3>2018</h3>
+                <p>Webentwickler-Praktikum bei StartUpVision</p>
+            </div>
+            <div class="timeline-block timeline-block-right">
+                <h3>2017</h3>
+                <p>Abschluss der Fachhochschulreife, Fokus auf Informationstechnologie</p>
+            </div>
+            <div class="timeline-block timeline-block-left">
+                <h3>2016</h3>
+                <p>Teilnahme am Hackathon XYZ, Gewinn des Innovationspreises</p>
+            </div>
+            <div class="timeline-block timeline-block-right">
+                <h3>2015</h3>
+                <p>Einführungskurs in Java, Online-Zertifikat von CourseProvider</p>
+            </div>
+        </div>
+    </section>
+    
+</section>
+
+<section id="fähigkeiten">
+    <h2>Fähigkeiten</h2>
+    <ul>
+        <li>Frontend-Entwicklung: HTML, CSS, JavaScript, React, Vue.js</li>
+        <li>Backend-Entwicklung: Node.js, Express, MongoDB</li>
+        <li>DevOps: Docker, Jenkins, Kubernetes</li>
+        <li>Soft Skills: Teamführung, Projektmanagement, agiles Arbeiten</li>
+    </ul>
+</section>
+
+<section id="projekte">
+    <h2>Projekte</h2>
+    <article>
+        <h3>Projektname 1</h3>
+        <p>Eine kurze Beschreibung des Projekts und der verwendeten Technologien...</p>
+    </article>
+    <article>
+        <h3>Projektname 2</h3>
+        <p>Eine weitere kurze Projektbeschreibung...</p>
+    </article>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <form id="kontaktformular">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="ort">Ort:</label>
+        <input type="text" id="ort" name="ort" required oninput="autocompleteOrt()">
+        
+        <label for="plz">PLZ:</label>
+        <input type="text" id="plz" name="plz" required readonly>
+        
+        <label for="nachricht">Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" required></textarea>
+        
+        <button type="submit">Senden</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

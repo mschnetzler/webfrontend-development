@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Selektoren und Größeneinheiten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cascading Stylesheets (CSS)</h1>
+
+    <p>Ohne CSS wären Webseiten nur einfache Textdokumente. CSS gibt uns die Möglichkeit, Webseiten ansprechend und interaktiv zu gestalten, was für eine positive Benutzererfahrung unerlässlich ist.</p>
+
+    <h2>Wie funktioniert CSS?</h2>
+    <p>CSS kann auf drei Arten in eine Webseite eingebunden werden:</p>
+    <ul>
+        <li><strong>Inline-Stil:</strong> Direkt in den HTML-Elementen über das "style" Attribut.</li>
+        <li><strong>Interne Stylesheets:</strong> Im &lt;head&gt; Bereich der HTML-Datei mithilfe des &lt;style&gt; Tags.</li>
+        <li><strong>Externe Stylesheets:</strong> Durch Verlinkung einer externen CSS-Datei im &lt;head&gt; Bereich mit dem &lt;link&gt; Element.</li>
+    </ul>
+
+    <h2>Grundlegende Syntax</h2>
+    <p>Ein CSS-Regelwerk besteht aus einem Selektor und einem Deklarationsblock:</p>
+    <pre>
+selektor {
+    eigenschaft: wert;
+}
+    </pre>
+    <p>Der <strong>Selektor</strong> gibt an, auf welches Element oder welche Elemente sich die Regeln beziehen. Der <strong>Deklarationsblock</strong>, umschlossen von geschweiften Klammern, enthält eine oder mehrere Deklarationen, die durch Semikolon getrennt sind. Jede Deklaration besteht aus einer <strong>Eigenschaft</strong> und einem <strong>Wert</strong>.</p>
+
+    <h2>Ein einfaches Beispiel</h2>
+    <p>Um die Textfarbe eines &lt;p&gt;-Elements in Blau zu ändern, würdet ihr folgenden CSS-Code verwenden:</p>
+    <pre>
+p {
+    color: blue;
+}
+    </pre>
+
+    <h2>Informationen zu CSS</h2>
+    <p>Wenn Sie Informationen zu einzelnen Eigenschaften benötigen besuchen Sie die Webseite: <a href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a>. Beachten Sie auch die kompatibilitäten einzelnere Browser für die Eigenschaften.</p>
+
+    <h2>CSS anwenden</h2>
+    <p>Um CSS in eure Webseite einzubinden, empfehle ich die Nutzung eines externen Stylesheets, da dies die Wartung erleichtert. Erstellt eine Datei mit der Endung .css (z.B. styles.css) und verlinkt diese in eurem HTML-Dokument im &lt;head&gt;-Bereich:</p>
+    <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+    </pre>
+
+    <h2>Größeneinheiten in CSS</h2>
+    <p>In CSS gibt es verschiedene Einheiten, um Größen wie Breite, Höhe, Schriftgröße und mehr zu definieren:</p>
+    <ul>
+        <li><strong>Absolute Größeneinheiten</strong> wie 'px' (Pixel), 'pt' (Punkte), 'cm' (Zentimeter), bleiben immer gleich.</li>
+        <li><strong>Relative Größeneinheiten</strong> wie 'em' und 'rem' beziehen sich auf Schriftgrößen, während '%' sich auf ein Verhältnis zum umgebenden Element bezieht.</li>
+        <li><strong>Viewport-bezogene Einheiten</strong> wie 'vw' (Viewport-Breite) und 'vh' (Viewport-Höhe) sind prozentuale Einheiten, die sich auf die Größe des Browserfensters beziehen.</li>
+    </ul>
+    <p>Die Wahl der Einheiten hängt vom Kontext ab und davon, wie flexibel die Webseite auf verschiedene Bildschirmgrößen reagieren soll.</p>
+</body>
+</html>

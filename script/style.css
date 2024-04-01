@@ -17,12 +17,7 @@ h1, h2 {
     color: #0a0a0a;
 }
 
-code, pre {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+
 
 .element {
     color: #3b82f6; /* Blue */
@@ -34,10 +29,6 @@ code, pre {
 
 .attribute {
     color: #f59e0b; /* Orange */
-}
-
-pre {
-    white-space: pre-wrap; /* Since preformatted text might not wrap otherwise */
 }
 
 a {
@@ -117,4 +108,193 @@ td {
 
 .tipp-box a:hover {
     color: #0d6efd; /* Blue on hover */
+}
+
+
+code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.element {
+    color: #3b82f6; /* Blue */
+}
+
+.tag {
+    color: #10b981; /* Green */
+}
+
+.attribute {
+    color: #f59e0b; /* Orange */
+}
+
+
+a {
+    color: #065f46; /* Dark green */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f3f3f3;
+}
+
+td {
+    background-color: #fdfdfd;
+}
+
+.element-name {
+    font-weight: bold;
+    color: #3b82f6; /* Blue */
+}
+
+.tag-name {
+    font-weight: bold;
+    color: #10b981; /* Green */
+}
+
+.time {
+    font-style: italic;
+    font-size: large;
+    color: #6c757d; /* Modern grey */
+}
+
+.tipp-box {
+    background-color: #e7f5ff; /* Light blue background */
+    border-left: 5px solid #2c7be5; /* Darker blue border on the left */
+    padding: 10px 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.tipp-box:before {
+    content: '\\1F4A1'; /* Light bulb emoji as icon */
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/* Restyle the Tipp links to be more noticeable */
+.tipp-box a {
+    color: #065f46; /* Dark green as before */
+    text-decoration: underline;
+}
+
+.tipp-box a:hover {
+    color: #0d6efd; /* Blue on hover */
+}
+
+/* Additional styles to enhance form inputs and labels */
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover {
+    background-color: #3b82f6;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    width: auto;
+}
+
+/* Add some spacing and alignment to the form itself */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Make the form's submit button stand out */
+input[type="submit"] {
+    background-color: #10b981; /* Green */
+    color: white;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #059669;
+}
+
+.comment {
+    color:#059669;
 }
